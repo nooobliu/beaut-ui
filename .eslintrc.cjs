@@ -23,8 +23,12 @@ module.exports = {
       {
         includeExports: true
       }
-    ] // 不允许重复导入
-  },
-  'arrow-parens': 0, // 箭头函数用小括号括起来 - 关闭
-  'no-var': 0 // 禁用var，用let和const代替
+    ], // 不允许重复导入
+    'arrow-parens': 0, // 箭头函数用小括号括起来 - 关闭
+    'no-var': 0, // 禁用var，用let和const代替
+    // 类型断言相关，不关闭stores文件类型报错
+    '@typescript-eslint/consistent-type-assertions': 0,
+    // 允许使用type定义类型
+    '@typescript-eslint/consistent-type-definitions': 0
+  }
 }

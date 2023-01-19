@@ -17,7 +17,7 @@ const componentMeta: ComponentMeta<typeof Test> = {
   }
 }
 export default componentMeta
-const Template: ComponentStory<typeof Test> = (args) => <Test {...args} />
+const Template: ComponentStory<typeof Test> = args => <Test {...args} />
 
 export const Primary = Template.bind({})
 export const Second = Template.bind({})
