@@ -29,6 +29,10 @@ module.exports = {
     // 类型断言相关，不关闭stores文件类型报错
     '@typescript-eslint/consistent-type-assertions': 0,
     // 允许使用type定义类型
-    '@typescript-eslint/consistent-type-definitions': 0
+    '@typescript-eslint/consistent-type-definitions': 0,
+    // 允许使用命名空间
+    '@typescript-eslint/no-namespace': 0,
+    // 允许使用reference导入ts
+    '@typescript-eslint/triple-slash-reference': 0
   }
 }
