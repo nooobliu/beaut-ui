@@ -1,6 +1,6 @@
 import { isObject, isString } from './is'
 
-type ClassNamesArg = string | Record<string, boolean>
+type ClassNamesArg = string | {}
 
 export function classNames(...args: ClassNamesArg[]): string {
   const arr: string[] = []
@@ -9,7 +9,7 @@ export function classNames(...args: ClassNamesArg[]): string {
       arr.push(v)
     } else if (isObject(v)) {
       for (const vKey in v) {
-        if (v[vKey]) {
+        if (isString(v[vKey])) {
           arr.push(vKey)
         }
       }
