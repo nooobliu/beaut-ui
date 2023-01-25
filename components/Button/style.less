@@ -1,8 +1,49 @@
 .beaut-button {
-  height: 13px;
   font-size: 16px;
+  background-color: royalblue;
+  color:white;
+  padding: 4px 12px 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline;
+  user-select: none;
+  filter: drop-shadow(0 0 3px royalblue);
   &-large {
-    height: 18px;
     font-size: 21px;
+  }
+  &-small {
+    font-size: 13px;
+  }
+  &-primary{
+    background-color: white;
+    color:royalblue;
+    filter: drop-shadow(0 0 1px royalblue);
+  }
+  &-text{
+    background-color: transparent;
+    color: #484646;
+    filter:none;
+  }
+  &-link{
+    background-color:transparent ;
+    color:royalblue;
+    filter:none;
+  }
+  &-circle{
+    height:43px;
+    width:43px;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &.beaut-button-large{
+      height:53px;
+      width:53px;
+    }
+    &.beaut-button-small{
+      height:38px;
+      width:38px;
+    }
   }
 }

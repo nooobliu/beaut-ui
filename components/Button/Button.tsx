@@ -13,9 +13,7 @@ interface ButtonProps {
 
 function Button(props: ButtonProps): JSX.Element {
   const mainName = getPrefix('button')
-  return (
-    <button className={classNames(mainName, props)}>{props.children}</button>
-  )
+  return <div className={classNames(mainName, props)}>{props.children}</div>
 }
 
 export default Button

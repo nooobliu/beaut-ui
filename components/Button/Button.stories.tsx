@@ -9,7 +9,7 @@ const componentMeta: ComponentMeta<typeof Button> = {
 }
 export default componentMeta
 const Template: ComponentStory<typeof Button> = args => (
-  <Button {...args}>测试</Button>
+  <Button {...args}>按钮</Button>
 )
 
 export const Primary = Template.bind({})
