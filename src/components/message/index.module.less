@@ -1,0 +1,27 @@
+.mixin() {
+  color: #fff;
+  padding: 5px 8px;
+}
+.message {
+  position: fixed;
+  // top: -100px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  .default {
+    .mixin();
+    background-color: #10aec2;
+  }
+  .danger {
+    .mixin();
+    background-color: #f07c82;
+  }
+  .success {
+    .mixin();
+    background-color: greenyellow;
+  }
+  .warning {
+    .mixin();
+    background-color: orange;
+  }
+}
