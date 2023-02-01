@@ -1,34 +1,18 @@
-import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from 'react'
+import message from './components/message'
+
 function App(): JSX.Element {
-  const [count, setCount] = useState(0)
+  const { msg, def, danger, success, warn } = message()
+
   return (
     <div className="App">
+      {msg}
       <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <button onClick={() => def('默认')}>默认</button>
+        <button onClick={() => danger('危险')}>危险</button>
+        <button onClick={() => success('安全')}>安全</button>
+        <button onClick={() => warn('警告')}>警告</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          onClick={() => {
-            setCount(count => count + 1)
-          }}
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }
