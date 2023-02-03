@@ -6,23 +6,24 @@ export function classNames(
   mainName: `beaut${string}`,
   ...args: ClassNamesArg[]
 ): string {
-  const arr: string[] = []
-  arr.push(mainName)
+  const set: Set<string> = new Set()
+  set.add(mainName)
   args.forEach(v => {
     if (isString(v)) {
-      arr.push(`${mainName}-${v}`)
+      set.add(`${mainName}-${v}`)
     } else if (isObject(v)) {
       for (const vKey in v) {
         const value = vKey === 'children' ? null : v[vKey]
         if (isString(value)) {
-          arr.push(`${mainName}-${value}`)
+          set.add(`${mainName}-${value}`)
         } else if (isBoolean(value)) {
           if (value) {
-            arr.push(`${mainName}-${vKey}`)
+            set.add(`${mainName}-${vKey}`)
           }
         }
       }
     }
   })
-  return arr.join(' ')
+  console.log(set)
+  return [...set.values()].join(' ')
 }
