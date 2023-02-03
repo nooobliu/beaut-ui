@@ -9,6 +9,7 @@
     width: 130px;
     border-radius: 10px;
     background-color: #colors[gray];
+    overflow: hidden;
   }
   &-width-bar {
     height: 15px;
@@ -16,8 +17,11 @@
     border-radius: 10px;
     background-color: #colors[primary];
     filter: #shadow[primary];
-    transition: all 0.3s;
+    transition-property: width,background-color;
+    transition-duration: 0.5s,1s;
+    overflow: hidden;
   }
+
   &-text {
     font-size: 11px;
   }
