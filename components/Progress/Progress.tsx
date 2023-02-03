@@ -6,7 +6,7 @@ import useCounter from 'ahooks/lib/useCounter'
 import { classNames } from '../_utils/classNames'
 
 interface ProgressProps {
-  showText: boolean
+  showText?: boolean
   value: number
   size?: 'small' | 'large' | 'middle'
   color?: 'primary' | 'secondary' | 'tertiary'
@@ -28,7 +28,7 @@ function Progress(props: ProgressProps): JSX.Element {
         ></div>
       </div>
       <div className={`${mainName}-text`}>
-        {props.showText && `${percent}%`}
+        {props.showText === true && `${percent}%`}
       </div>
     </div>
   )

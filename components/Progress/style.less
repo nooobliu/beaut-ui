@@ -1,64 +1,64 @@
 @import '../_style/style.less';
-.beaut-progress{
+.beaut-progress {
   display: flex;
   //justify-content: center;
   align-items: center;
-  gap:3px;
-  &-bar-container{
-    height:15px;
-    width:130px;
+  gap: 3px;
+  &-bar-container {
+    height: 15px;
+    width: 130px;
     border-radius: 10px;
     background-color: #colors[gray];
   }
-  &-width-bar{
-    height:15px;
-    width:130px;
+  &-width-bar {
+    height: 15px;
+    width: 130px;
     border-radius: 10px;
     background-color: #colors[primary];
     filter: #shadow[primary];
     transition: all 0.3s;
   }
-  &-text{
-    font-size:11px;
+  &-text {
+    font-size: 11px;
   }
-  &-small{
-    & .beaut-progress-bar-container{
-      height:11px;
-      width:110px;
+  &-small {
+    & .beaut-progress-bar-container {
+      height: 11px;
+      width: 110px;
       border-radius: 10px;
     }
-    & .beaut-progress-width-bar{
-      height:11px;
-      width:110px;
+    & .beaut-progress-width-bar {
+      height: 11px;
+      width: 110px;
       border-radius: 10px;
     }
-    & .text{
-      font-size:5px;
+    & .text {
+      font-size: 5px;
     }
   }
-  &-large{
-    & .beaut-progress-bar-container{
-      height:17px;
-      width:160px;
+  &-large {
+    & .beaut-progress-bar-container {
+      height: 17px;
+      width: 160px;
       border-radius: 12px;
     }
-    & .beaut-progress-width-bar{
-      height:17px;
-      width:160px;
+    & .beaut-progress-width-bar {
+      height: 17px;
+      width: 160px;
       border-radius: 12px;
     }
-    & .text{
-      font-size:13px;
+    & .text {
+      font-size: 13px;
     }
   }
-  &-secondary{
-    & .beaut-progress-width-bar{
+  &-secondary {
+    & .beaut-progress-width-bar {
       background-color: #colors[secondary];
       filter: #shadow[secondary];
     }
   }
-  &-tertiary{
-    & .beaut-progress-width-bar{
+  &-tertiary {
+    & .beaut-progress-width-bar {
       background-color: #colors[tertiary];
       filter: #shadow[tertiary];
     }

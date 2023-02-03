@@ -8,8 +8,13 @@ const componentMeta: ComponentMeta<typeof Progress> = {
   component: Progress
 }
 export default componentMeta
+// 写成函数的形式,方便Storybook进行解析
 const Template: ComponentStory<typeof Progress> = args => (
   <Progress {...args}></Progress>
 )
 
 export const Primary = Template.bind({})
+// 可以如此设置默认参数
+Primary.args = {
+  value: 50
+}
