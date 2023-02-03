@@ -17,7 +17,9 @@ export function classNames(
         if (isString(value)) {
           arr.push(`${mainName}-${value}`)
         } else if (isBoolean(value)) {
-          arr.push(`${mainName}-${vKey}`)
+          if (value) {
+            arr.push(`${mainName}-${vKey}`)
+          }
         }
       }
     }

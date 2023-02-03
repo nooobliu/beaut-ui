@@ -7,6 +7,7 @@ import { classNames } from '../_utils/classNames'
 
 interface ProgressProps {
   showText?: boolean
+  colorful?: boolean
   value: number
   size?: 'small' | 'large' | 'middle'
   color?: 'primary' | 'secondary' | 'tertiary'
