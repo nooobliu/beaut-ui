@@ -24,6 +24,5 @@ export function classNames(
       }
     }
   })
-  console.log(set)
   return [...set.values()].join(' ')
 }
