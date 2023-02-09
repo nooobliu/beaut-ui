@@ -21,7 +21,7 @@ function Progress(props: ProgressProps): JSX.Element {
   const update = useUpdate()
   useInterval(
     () => {
-      if (props.colorful === false) return
+      if (props.colorful !== true) return
       switch (color.current) {
         case 'primary':
           color.current = 'secondary'
