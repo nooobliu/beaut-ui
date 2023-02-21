@@ -1,0 +1,24 @@
+.dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.dark-mode-toggle button {
+  background-color: #4a4a4a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.dark-mode-toggle.light button {
+  background-color: #fff;
+  color: #4a4a4a;
+}
+
+.dark-mode-toggle.dark button {
+  background-color: #4a4a4a;
+  color: #fff;
+}
