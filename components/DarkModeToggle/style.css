@@ -1,0 +1,70 @@
+@import '../_style/style.less';
+.beaut-progress {
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  gap: 3px;
+  &-bar-container {
+    height: 15px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #colors[gray];
+    overflow: hidden;
+  }
+  &-width-bar {
+    height: 15px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #colors[primary];
+    filter: #shadow[primary];
+    transition-property: width, background-color;
+    transition-duration: 0.5s, 0.6s;
+    overflow: hidden;
+  }
+
+  &-text {
+    font-size: 11px;
+  }
+  &-small {
+    & .beaut-progress-bar-container {
+      height: 11px;
+      width: 110px;
+      border-radius: 10px;
+    }
+    & .beaut-progress-width-bar {
+      height: 11px;
+      width: 110px;
+      border-radius: 10px;
+    }
+    & .text {
+      font-size: 5px;
+    }
+  }
+  &-large {
+    & .beaut-progress-bar-container {
+      height: 17px;
+      width: 160px;
+      border-radius: 12px;
+    }
+    & .beaut-progress-width-bar {
+      height: 17px;
+      width: 160px;
+      border-radius: 12px;
+    }
+    & .text {
+      font-size: 13px;
+    }
+  }
+  &-secondary {
+    & .beaut-progress-width-bar {
+      background-color: #colors[secondary];
+      filter: #shadow[secondary];
+    }
+  }
+  &-tertiary {
+    & .beaut-progress-width-bar {
+      background-color: #colors[tertiary];
+      filter: #shadow[tertiary];
+    }
+  }
+}
